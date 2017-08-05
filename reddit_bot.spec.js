@@ -8,7 +8,7 @@ var response = bot.onNewPost ('joebob32','DVD player') 	//new variable response 
 		reddit.post (response)		//post response to reddit
 	}
 */
-
+var Bot = require('./reddit_bot.js');
 describe ('Bot', function() {
 
 	it ('Responds to a post with text "DVD player"', function() {
@@ -52,7 +52,7 @@ describe ('Bot', function() {
 		var userName = 'DVD_King_Bot'
 		var DVDbot = new Bot ('DVD player', 'DVD_Crowner')
 		var post = 'You are the DVD Player King!'
-		var response = DVDbot.onNewPost (username, post)
+		var response = DVDbot.onNewPost (userName, post)
 		expect (response).toEqual(null)
 	})
 
