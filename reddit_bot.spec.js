@@ -72,7 +72,7 @@ describe ('Bot', function() {
 		expect (response).toEqual(null)
 	})
 
-	it ('WalkmanBot bot does not respond to users who would become king, but diss on Michael Jackson', function() {
+	xit ('WalkmanBot bot does not respond to users who would become king, but diss on Michael Jackson', function() {
 		var WalkmanBot = new Bot ('Walkman', 'ChristopherWalkman_Bot')
 		var post = 'It was totally not cool when Michael Jackson held that Walkman out a window.'
 		var userName = 'LatoyaJFan'
@@ -80,7 +80,7 @@ describe ('Bot', function() {
 		var response = WalkmanBot.onNewPost (userName, post)
 		expect (response).toEqual(null)
 	})
-	it ('WalkmanBot does not respond to current Walkman Kings who diss on Michael Jackson', function() {
+	xit ('WalkmanBot does not respond to current Walkman Kings who diss on Michael Jackson', function() {
 		var WalkmanBot = new Bot ('Walkman', 'ChristopherWalkman_Bot')
 		var post = 'Look at MJ\'s sweet Walkman'
 		var userName = 'BillyGean'
