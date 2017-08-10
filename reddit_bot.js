@@ -1,5 +1,5 @@
-function Bot(){
-
+function Bot(phrase, userName){
+  this.phrase = phrase;
 };
 
 Bot.prototype.onNewPost = function(){
